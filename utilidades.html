@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Soluções contábeis personalizadas para o seu negócio.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Utilidades - Contabilidade</title>
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS do Navbar -->
+  <link rel="stylesheet" href="navbar.css">
+  <!-- Font Awesome (opcional para ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 70px; /* Espaço para o navbar fixo */
+      margin: 0;
+    }
+    /* Título principal da página */
+    h2.mb-4 {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    /* Texto descritivo */
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* ------------------------------
+       Estilos para os Cards
+    ------------------------------ */
+    /* Container que agrupa os cards (opcional) */
+    .utilidades-cards .card {
+      border: none;            /* Remove a borda padrão */
+      border-radius: 8px;      /* Cantos arredondados */
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    }
+    .utilidades-cards .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    }
+    .utilidades-cards .card-body {
+      background-color: #fff;  /* Fundo branco */
+      border-radius: 8px;
+    }
+    /* Título do Card */
+    .utilidades-cards .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    /* Links de utilidades */
+    .util-links a {
+      color: #000;                /* Cor do texto */
+      text-decoration: none;      /* Remove sublinhado */
+      display: block;
+      padding: 6px 0;
+      border-radius: 4px;         /* Suaviza o hover */
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .util-links a:hover {
+      background-color: #f0f0f0;  /* Destaque ao passar o mouse */
+      color: #000;
+    }
+
+    /* Footer */
+    footer.bg-dark {
+      margin-top: 4rem;
+    }
+
+    /* Botão flutuante do WhatsApp (opcional) */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        background-color: #25d366;
+        color: #fff;
+        font-size: 24px;
+        padding: 15px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        transition: background-color 0.3s;
+      }
+      .whatsapp-btn:hover {
+        background-color: #20b955;
+        text-decoration: none;
+        color: #fff;
+      }
+      .whatsapp-btn i {
+        margin-right: 10px;
+      }
+  
+
+
+       /*CSS específico para os links do footer */
+ footer a.footer-link {
+  text-decoration: none;
+}
+footer a.footer-link:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+  
+
+  </style>
+</head>
+<body>
+  <!-- Placeholder para o Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Utilidades</h2>
+    <p>Aqui você pode disponibilizar ferramentas úteis, como calculadoras, informações sobre obrigações fiscais ou outros conteúdos de apoio aos clientes.</p>
+
+    <!-- Seção de Cards de Utilidades -->
+    <!-- 
+      row-cols-1  -> 1 coluna em telas extra-pequenas
+      row-cols-md-2 -> 2 colunas a partir de telas médias
+      row-cols-lg-3 -> 3 colunas a partir de telas grandes
+    -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 utilidades-cards">
+      
+      <!-- Card 1: Trabalhistas -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body util-links">
+            <!-- Exemplo de ícone no título (opcional) -->
+            <h4 class="card-title mb-3">
+              <i class="fa-solid fa-briefcase"></i> Trabalhistas
+            </h4>
+            <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp150.htm">Lei da Empregada Doméstica</a>
+            <a href="https://cav.receita.fazenda.gov.br/autenticacao/login/index">RADARF Online</a>
+            <a href="https://www.gov.br/trabalho-e-emprego/pt-br">Ministério do Trabalho</a>
+            <a href="https://meu.inss.gov.br/#/login">Meu INSS</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Mais Procurado -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body util-links">
+            <h4 class="card-title mb-3">
+              <i class="fa-solid fa-magnifying-glass"></i> Mais Procurado
+            </h4>
+            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_Solicitacao.asp">Consulta CNPJ</a>
+            <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp">Consulta CPF</a>
+            <a href="https://www.restituicao.receita.fazenda.gov.br/#/">Consulta Restituições IRPF</a>
+            <a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx?AspxAutoDetectCookieSupport=1">NFE</a>
+            <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/">Simples Nacional</a>
+            <a href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Certidões -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body util-links">
+            <h4 class="card-title mb-3">
+              <i class="fa-solid fa-file-circle-check"></i> Certidões
+            </h4>
+            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PF/Emitir">Certidão Conjunta de Débito PF</a>
+            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir">Certidão Conjunta de Débito PJ</a>
+            <a href="https://www10.fazenda.sp.gov.br/CertidaoNegativaDeb/Pages/EmissaoCertidaoNegativa.aspx">Certidão Estadual</a>
+            <a href="https://www.tst.jus.br/certidao">Certidão Trabalhista</a>
+            <a href="https://portalcontribuinte.giexonline.com.br/AcessoCertidao.aspx?pCertidao=C">Certidão Municipal de Hortolândia</a>
+            <a href="https://certidoes-web.campinas.sp.gov.br">Certidão Municipal de Campinas</a>
+            <a href="https://duc.prefeitura.sp.gov.br/certidoes/forms_anonimo/frmConsultaEmissaoCertificado.aspx">Certidão Municipal de São Paulo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Links Úteis -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body util-links">
+            <h4 class="card-title mb-3">
+              <i class="fa-solid fa-link"></i> Links Úteis
+            </h4>
+            <a href="https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes">Índices Econômicos</a>
+            <a href="https://www.boletimcontabil.com.br/bolet2/cfop.php">CFOP</a>
+            <a href="https://www.boletimcontabil.com.br/facilitador.php">Facilitador Contábil</a>
+            <a href="https://portal.fazenda.sp.gov.br/servicos/dare/paginas/DARE-ICMS.aspx">GARE ICMS</a>
+            <a href="https://www.sintegra.gov.br">SINTEGRA</a>
+            <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes.aspx?id=21">Optantes SIMPLES Nacional</a>
+            <a href="https://calculoexato.com.br/submenu.aspx?codMenu=Finan">Cálculo Financeiro</a>
+            <a href="https://www.boletimcontabil.com.br/modeloscontrato/Modelos_Contrato/modelos.php">Modelos de Contratos</a>
+            <a href="https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/">Cotações Moedas BOVESPA</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso deseje mais cards, basta repetir a estrutura acima -->
+    </div>
+  </div>
+
+  <!-- Botão flutuante do WhatsApp (opcional) -->
+  <a href="https://wa.me/5519999999999" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Fale Conosco
+  </a>
+
+
+<!-- Footer com Canais de contato, Links Rápidos e Acesso Rápido -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row mb-4">
+      <!-- Canais de contato -->
+      <div class="col-md-4">
+        <h5>Canais de contato</h5>
+        <p>
+          Telefone: +55 19 3243-0077<br>
+          WhatsApp: +55 19 3243-0077<br>
+          Email: <a href="mailto:contato@alphacontabil.com.br" class="text-white footer-link">contato@alphacontabil.com.br</a><br>
+          Endereço: Rua Barbosa Cunha, 779 – Guanabara – Campinas / SP – CEP: 13073-320
+        </p>
+      </div>
+  
+      <!-- Links Rápidos -->
+      <div class="col-md-4">
+        <h6>Links rápidos</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white footer-link">Home</a></li>
+          <li><a href="institucional.html" class="text-white footer-link">Sobre</a></li>
+          <li><a href="servicos.html" class="text-white footer-link">Serviços</a></li>
+          <li><a href="contato.html" class="text-white footer-link">Contato</a></li>
+          <li><a href="#" class="text-white footer-link">Agenda</a></li>
+        </ul>
+      </div>
+  
+      <!-- Acesso Rápido -->
+      <div class="col-md-4">
+        <h6>Acesso Rápido</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white footer-link">Utilidades</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="text-center py-2 border-top">
+      <p class="mb-0">&copy; 2025 Contabilidade. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script para carregar o navbar -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar o navbar:', error));
+  </script>
+</body>
+</html>

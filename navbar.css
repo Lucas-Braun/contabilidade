@@ -1,0 +1,19 @@
+/* navbar.css */
+.navbar {
+    background-color: #fff; /* Escolha a cor desejada, aqui branco */
+    /* Opcional: adicione uma sombra para destaque */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.navbar-brand {
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #007bff !important;
+  }
+  
